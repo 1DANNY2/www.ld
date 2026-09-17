@@ -435,7 +435,7 @@ flying-bird {
     left: -100px;
     z-index: 9999;
     pointer-events: none;
-    animation: flyingBird 12s linnear infinite;
+    animation: flyBird 12s linnear infinite;
 }
 
 @keyframes flyBird {
