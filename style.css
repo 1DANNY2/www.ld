@@ -428,46 +428,37 @@
 .inline-style-8 { margin-top:36px; }
 .inline-style-9 { border:none; cursor:pointer; }
 .inline-style-10 { display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; width:100%; }
-flying-bird {
+.flying-bird {
     position: fixed;
     width: 80px;
     top: 100px;
-    left: -100px;
-    z-index: 9999:
-pointer-events: none;
-animation: flyBird 8s linear infinite;
+    left: 0;
+    z-index: 9999;
+    pointer-events: none;
+
+    animation: flyBird 8s linear infinite;
 }
 
-keyframes flyBird {
+@keyframes flyBird {
     0% {
-    left: -100px
-    top: 100px;
+        transform: translateX(-120px) translateY(0);
+    }
 
-}
+    25% {
+        transform: translateX(25vw) translateY(50px);
+    }
 
-25% {
-left: 25%;
-top: 180px;
+    50% {
+        transform: translateX(50vw) translateY(-30px);
+    }
 
-}
+    75% {
+        transform: translateX(75vw) translateY(60px);
+    }
 
-50% {
-    left: 50%;
-    top: 80px;
-
-}
-
-75% {
-left: 75%;
-top: 200px;
-
-}
-
-100% {
-    left: 110%;
-    top: 100px;
-
-}
+    100% {
+        transform: translateX(110vw) translateY(0);
+    }
 }
 
 
