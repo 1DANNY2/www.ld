@@ -429,48 +429,54 @@
 .inline-style-9 { border:none; cursor:pointer; }
 .inline-style-10 { display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; width:100%; }
 flying-bird {
-    position: fixe;
+    position: fixed;
     width: 80px;
     top: 100px;
     left: -100px;
-    z-index: 9999;
-    pointer-events: none;
-    animation: flyBird 12s linnear infinite;
+    z-index: 9999:
+pointer-events: none;
+animation: flyBird 8s linear infinite;
 }
 
-@keyframes flyBird {
+keyframes flyBird {
     0% {
-        left: -100px;
-        top: 100px;
-        transform: rotate(5deg);
-    }
+    left: -100px
+    top: 100px;
 
-    25% {
-        left: 25%;
-        top: 180px;
-        transform: rotate(-5deg);
-
-    }
-
-    50% {
-        left: 50%;
-        top: 80px;
-        transform: rotate(5deg);
-
-    }
-
-    75% {
-        left: 75%;
-        top: 200px;
-        transform: rotate(-5deg);
-
-    }
-
-    100% {
-        left: 110%;
-        top: 100px:;
-        transform: rotate(5deg);
-
-    }
 }
-        
+
+25% {
+left: 25%;
+top: 180px;
+
+}
+
+50% {
+    left: 50%;
+    top: 80px;
+
+}
+
+75% {
+left: 75%;
+top: 200px;
+
+}
+
+100% {
+    left: 110%;
+    top: 100px;
+
+}
+}
+
+
+
+
+
+
+
+
+
+    
+    
