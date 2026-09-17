@@ -428,12 +428,17 @@
 .inline-style-8 { margin-top:36px; }
 .inline-style-9 { border:none; cursor:pointer; }
 .inline-style-10 { display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; width:100%; }
+..bird-section {
+    position: relative;
+    overflow: hidden;
+}
+
 .flying-bird {
-    position: fixed;
+    position: absolute;
     width: 80px;
-    top: 100px;
-    left: 0;
-    z-index: 9999;
+    top: 50px;
+    left: -100px;
+    z-index: 10;
     pointer-events: none;
 
     animation: flyBird 8s linear infinite;
@@ -441,23 +446,28 @@
 
 @keyframes flyBird {
     0% {
-        transform: translateX(-120px) translateY(0);
+        left: -100px;
+        top: 50px;
     }
 
     25% {
-        transform: translateX(25vw) translateY(50px);
+        left: 25%;
+        top: 100px;
     }
 
     50% {
-        transform: translateX(50vw) translateY(-30px);
+        left: 50%;
+        top: 40px;
     }
 
     75% {
-        transform: translateX(75vw) translateY(60px);
+        left: 75%;
+        top: 120px;
     }
 
     100% {
-        transform: translateX(110vw) translateY(0);
+        left: 110%;
+        top: 60px;
     }
 }
 
